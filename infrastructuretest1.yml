@@ -262,7 +262,6 @@ Resources:
           aws s3 cp s3://soniyaudacitybucket/udacityapp.zip .
           unzip -o udacityapp.zip
       ImageId: ami-0ac73f33a1888c64a
-      KeyName: bastionhost
       IamInstanceProfile: !Ref ProfileWithRolesForOurApp
       SecurityGroups:
         - Ref: WebServerSecGroup
